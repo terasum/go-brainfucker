@@ -21,6 +21,7 @@
 //SOFTWARE.
 
 package interpreter
+
 /*
    BrainFuck the language, which created by Urban Mueller
    Turing complete language
@@ -41,6 +42,7 @@ import (
 	"bytes"
 	"fmt"
 )
+
 // Interpreter read and run BrainFuck code
 type Interpreter struct {
 	code []byte
@@ -58,6 +60,7 @@ type Interpreter struct {
 	// debug or not
 	debug bool
 }
+
 // NewInterpreter return new interpreter instance
 func NewInterpreter(code []byte, isdebug bool) *Interpreter {
 	return &Interpreter{
@@ -128,6 +131,7 @@ func (inter *Interpreter) resizeMem(pointer int64) {
 	}
 	//else do nothing
 }
+
 // Run the BrainFuncker code
 func (inter *Interpreter) Run() (string, error) {
 	list := []byte{'+', '-', '<', '>', '.', ',', '[', ']'}
