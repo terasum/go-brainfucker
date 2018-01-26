@@ -23,7 +23,7 @@
 /*
 [ This program prints "Hello World!" and a newline to the screen, its
   length is 106 active command characters [it is not the shortest.]
- 
+
   This loop is a "comment loop", it's a simple way of adding a comment
   to a BF program such that you don't have to worry about any command
   characters. Any ".", ",", "+", "-", "<" and ">" characters are simply
@@ -66,15 +66,14 @@ Pointer :   ^
 package main
 
 import (
-   "fmt"
-   "os"
-   "github.com/terasum/gobf/cmd"
+	"fmt"
+	"github.com/terasum/gobf/cmd"
+	"os"
 )
 
 func main() {
-   if err := cmd.RootCmd.Execute(); err != nil {
-      fmt.Println(err)
-      os.Exit(-1)
-   }
+	if err := cmd.RootCmd.Execute(); err != nil {
+		fmt.Println(err)
+		os.Exit(-1)
+	}
 }
-
