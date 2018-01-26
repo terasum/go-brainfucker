@@ -1,5 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/terasum/gobf)](https://goreportcard.com/report/github
-.com/terasum/gobf)
+[![Go Report Card](https://goreportcard.com/badge/github.com/terasum/gobf)](https://goreportcard.com/report/github.com/terasum/gobf)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/terasum/gobf)
 
 **gobf** BrainFuck language interpreter 
